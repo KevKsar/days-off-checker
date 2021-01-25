@@ -1,5 +1,5 @@
 {
-  "name": "days-off-checker-cli",
+  "name": "@kevksar/days-off-checker-cli",
   "version": "1.0.0",
   "description": "A CLI to know the days off for X year and X country",
   "main": "index.js",
