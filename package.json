@@ -1,0 +1,30 @@
+{
+  "name": "days-off-checker-cli",
+  "version": "1.0.0",
+  "description": "A CLI to know the days off for X year and X country",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevKsar/days-off-checker-CLI.git"
+  },
+  "keywords": [
+    "days-off",
+    "hollidays"
+  ],
+  "author": "kevksar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KevKsar/days-off-checker-CLI/issues"
+  },
+  "homepage": "https://github.com/KevKsar/days-off-checker-CLI#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "chalk": "^4.1.0",
+    "country-list": "^2.2.0",
+    "figlet": "^1.5.0",
+    "ora": "^5.3.0"
+  }
+}
