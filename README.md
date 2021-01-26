@@ -1,6 +1,6 @@
 # days-off-checker-CLI
 
-A CLI to know the days off for X year and X country..
+A CLI to know the days off for X country and X  year.
 
 ## Installation
 
@@ -13,7 +13,7 @@ npm i @kevksar/days-off-checker-cli
 ## Usage
 In commande line use :
 ```
-checkDaysOff 'year' 'country' 
+checkDaysOff 'country' 'year'
 ```
 
 
