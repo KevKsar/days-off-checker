@@ -1,8 +1,11 @@
 {
   "name": "@kevksar/days-off-checker-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A CLI to know the days off for X year and X country",
   "main": "index.js",
+  "bin": {
+    "checkDaysOff": "./index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

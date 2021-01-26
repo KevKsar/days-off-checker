@@ -7,22 +7,21 @@ const figlet = require('figlet');
 const { getCode } = require('country-list');
 const axios = require('axios').default;
 
-let ArgsInput = process.argv.slice(2);
+let argsInput = process.argv.slice(2);
 
-let CountryInput = ArgsInput[0];
-let YearInput = ArgsInput[1];
+let countryInput = argsInput[0];
+let yearInput = argsInput[1];
 
-console.log(chalk.cyanBright(CountryInput));
+console.log(chalk.cyanBright(countryInput));
 
 //converti le nom du pays en code à 2 chiffres qui est utilisé pr l'url
-let CountryCode = getCode(CountryInput);
-console.log(chalk.cyanBright(CountryCode));
+let countryCode = getCode(countryInput);
+console.log(chalk.cyanBright(countryCode));
 
-//génère l'url avec l'année des congés et sur quel pays
-let CurrentYear = new Date().getFullYear()
-console.log(chalk.cyanBright(CurrentYear));
+let currentYear = new Date().getFullYear()
+console.log(chalk.cyanBright(currentYear));
 
-let URLApi = "https://date.nager.at/Api/v2/PublicHolidays/" + CurrentYear + "/" + CountryCode;
+let URLApi = "https://date.nager.at/Api/v2/PublicHolidays/" + yearInput + "/" + countryCode;
 console.log(chalk.whiteBright(URLApi));
 
 axios.get(URLApi)
@@ -41,7 +40,7 @@ axios.get(URLApi)
 const spinner = ora().start();
 setTimeout(() => {
     spinner.color= 'yellow';
-	spinner.text = 'Infinite Loading';
+	spinner.text = 'Infinite Loading / Press ctrl c ';
 }, 6000);
 
 figlet('Days-Off Checker', function (err, data) {
